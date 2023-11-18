@@ -10,8 +10,8 @@ if st.sidebar.button('Click'):
   st.write(df)
 WicketKeeper=['kl rahul', 'kishan']
 kipper=', '.join(WicketKeeper)
-options =st.sidebar.selectbox('choose option',(kipper,'Allrounder','WicketKeeper','Bowlers'))
-st.write(options)
+options =st.sidebar.selectbox('choose option',('batters','Allrounder','WicketKeeper','Bowlers'))
+st.write(options,kipper)
 
 
 
