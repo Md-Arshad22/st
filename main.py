@@ -13,7 +13,7 @@ kipper=', '.join(WicketKeeper)
 
 # Allrounder=['Arshad']
 # All=', '.join(Allrounder)
-options =st.sidebar.selectbox('choose option',({'kippers'=['kl','kishan']}))
+options =st.sidebar.selectbox('choose option',({'kippers':['kl','kishan']}))
 st.write(options)
 
 
