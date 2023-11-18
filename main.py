@@ -11,4 +11,4 @@ if st.sidebar.button('Click'):
 options =['option1','option2','option3']
 selectoption =st.selectbox('select and option',options)
 
-st.write(selectoption)
+st.sidebar.write(selectoption)
