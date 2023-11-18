@@ -9,5 +9,5 @@ df = pd.read_csv('cricket.csv')
 if st.sidebar.button('Click'):
   st.write(df)
 options =['option1','option2','option3']
-if st.sidebar.st.selectbox('select option'):
+if st.sidebar.selectbox('select option'):
   st.write(options)
