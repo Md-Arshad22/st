@@ -5,3 +5,4 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 df = pd.read_csv('cricket.csv')
+df
