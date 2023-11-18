@@ -9,6 +9,7 @@ df = pd.read_csv('cricket.csv')
 if st.sidebar.button('Click'):
   st.write(df)
 WicketKeeper=['kl rahul', 'kishan']
-options =st.sidebar.selectbox('choose option',(['Batter','Allrounder','WicketKeeper','Bowlers']))
-st.write(options)
-# st.write(batters)
+kipper=', '.join(WicketKeeper)
+#options =st.sidebar.selectbox('choose option',(['Batter','Allrounder','WicketKeeper','Bowlers']))
+#st.write(options)
+st.write(kipper)
