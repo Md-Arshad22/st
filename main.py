@@ -11,7 +11,7 @@ if st.sidebar.button('Click'):
 WicketKeeper=['kl rahul', 'kishan']
 kipper=', '.join(WicketKeeper)
 # All=', '.join(
-options =st.sidebar.selectbox('choose option',('batter'=kipper))
+options =st.sidebar.selectbox('choose option',('batter:'kipper))
 st.write(options)
 
 
