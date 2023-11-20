@@ -22,15 +22,14 @@ if st.sidebar.button('Squad'):
   st.write(df1)
 
 
-
 option = st.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+   "How would you like to be contacted?",
+   ("Email", "Home phone", "Mobile phone"),
+   index=None,
+   placeholder="Select contact method...",
+)
 
 st.write('You selected:', option)
-
-
-
-
+ 
 #st.write(kipper)
 #st.text(kipper)
