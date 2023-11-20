@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 df = pd.read_csv('cricket.csv')
-
-if st.sidebar.button('Click'):
-  st.write(df)
+df 
+# if st.sidebar.button('Click'):
+#   st.write(df)
 
 df1 = pd.read_csv('Squads.csv')
 
