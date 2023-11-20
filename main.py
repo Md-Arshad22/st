@@ -5,14 +5,22 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
+df = pd.read_csv('cricket.csv')
+st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
+st.subheader('POINT TABLE WORLD CUP2023')
+df
 
+df1 = pd.read_csv('Squads.csv')
 
+if st.sidebar.button('Click Squad'):
+    st.write(df1)
 
 option = st.sidebar.selectbox(
     'Select!',
-    ('Batter', 'WicketKeeper', 'All-Rounder','Bowler'))
-
+    ('Batter','WicketKeeper', 'All-Rounder','Bowler'))
 st.write('Selected:', option)
+
+
 
 
 
