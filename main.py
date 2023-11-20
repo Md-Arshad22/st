@@ -13,8 +13,8 @@ if st.sidebar.button('Click'):
 
 # Allrounder=['Arshad']
 # All=', '.join(Allrounder)
-options =st.sidebar.selectbox('choose option',({kippers=>['kl','kishan']}))
-st.write(options)
+# options =st.sidebar.selectbox('choose option',({kippers=['kl','kishan']}))
+# st.write(options)
 
 
 
