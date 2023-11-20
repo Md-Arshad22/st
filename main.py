@@ -26,6 +26,15 @@ option = st.sidebar.selectbox(
 st.write('Selected:', option)
 
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("images.jpg");
+background-size: cover;
+}
+</style>
+'''
 
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
