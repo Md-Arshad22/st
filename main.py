@@ -19,7 +19,7 @@ option = st.sidebar.selectbox(
     'Select!',
     ('Batter', 'WicketKeeper', 'All-Rounder','Bowler'))
 
-st.write('You selected:', option)
+st.write('Selected:', option)
 
 
 
