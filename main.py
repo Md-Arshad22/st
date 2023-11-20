@@ -23,23 +23,12 @@ if st.sidebar.button('Squad'):
   st.write(df1)
 
 
-def get_place(value):
-    print("I am called")
-    print("Received option", value)
 
-st.set_page_config(page_title="Code of Cosmos", layout="wide")
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
 
-with st.sidebar:
-    print("I am called from sidebar")
-    native_name = st.text_input("Name")
-    native_place = st.selectbox("Place of Birth", options=[], key="place").on_change(get_place)
-    native_dob = st.date_input("Date of Birth")
-    native_tob = st.time_input("Time of Birth", "now")
-# option = st.selectbox(
-#     'How would you like to be contacted?',
-#     ('Email', 'Home phone', 'Mobile phone'))
-
-# st.write('You selected:', option)
+st.write('You selected:', option)
 
 
 
