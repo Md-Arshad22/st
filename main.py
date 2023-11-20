@@ -14,8 +14,9 @@ df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Squad'):
   st.write(df1)
 
-option = st.sidebar.selectbox(
 
+option = st.sidebar.selectbox(
+    'Select!',
     ('Batter', 'WicketKeeper', 'All-Rounder','Bowler'))
 
 st.write('You selected:', option)
