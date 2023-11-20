@@ -8,7 +8,7 @@ def set_background():
     page_bg_img = '''
     <style>
     body {
-    background-image: url("your_image_url_here");
+    background-image: url("CUP.jpg");
     background-size: cover;
     }
     </style>
