@@ -4,12 +4,26 @@ import matplotlib.pyplot as plt
 # import seaborn as sns
 import streamlit as st
 
+def set_background():
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("your_image_url_here");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Set the background image
+set_background()
+
 
 df = pd.read_csv('cricket.csv')
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINT TABLE WORLD CUP2023')
-# df
-st.map(df)
+df
+
 df1 = pd.read_csv('Squads.csv')
 
 if st.sidebar.button('Click Squad'):
