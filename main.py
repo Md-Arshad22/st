@@ -15,13 +15,13 @@ df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Click Squad'):
     st.write(df1)
     
-Bowler = pd.read_csv('Bowler.csv')
+df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
-    st.write(Bowler)
+    st.write(df2)
 
 option = st.sidebar.selectbox(
     'Select!',
-    ('Batter','WicketKeeper', 'All-Rounder','Bowler')
+    ('Batter','WicketKeeper', 'All-Rounder','df2')
 )
 st.write('Selected:', option)
 
