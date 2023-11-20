@@ -14,8 +14,8 @@ if st.sidebar.button('Click'):
 
 # Allrounder=['Arshad']
 # All=', '.join(Allrounder)
-# options =st.sidebar.selectbox('Batter','Wicketkeeper','Allrounder','Bowler')
-# st.write(options,Batter)
+options =st.sidebar.selectbox('Batter','Wicketkeeper','Allrounder','Bowler')
+st.write('options you selected:',options)
 
 df1 = pd.read_csv('Squads.csv')
 
