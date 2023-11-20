@@ -8,8 +8,8 @@ import streamlit as st
 df = pd.read_csv('cricket.csv')
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINT TABLE WORLD CUP2023')
-df
-
+# df
+st.map(df)
 df1 = pd.read_csv('Squads.csv')
 
 if st.sidebar.button('Click Squad'):
@@ -26,15 +26,6 @@ option = st.sidebar.selectbox(
 st.write('Selected:', option)
 
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("images.jpg");
-background-size: cover;
-}
-</style>
-'''
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
