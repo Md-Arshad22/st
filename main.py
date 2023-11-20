@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 # import seaborn as sns
 import streamlit as st
 
-st.title('ICC ODI MEN'S CRICKET WORLD CUP 2023')
 
 df = pd.read_csv('cricket.csv')
+st.title("ICC ODI MEN'S CRICKET WORLD CUP 2023")
 df 
+
 # if st.sidebar.button('Click'):
 #   st.write(df.describe())
 
