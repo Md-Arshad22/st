@@ -18,7 +18,6 @@ if st.sidebar.button('Click Squad'):
 option = st.sidebar.selectbox(
     'Select!',
     ('Batter','WicketKeeper', 'All-Rounder','Bowler')
-df2 = pd.read_csv('Squads.csv')
 )
 st.write('Selected:', option)
 
