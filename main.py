@@ -16,21 +16,22 @@ if st.sidebar.button('Click'):
 # All=', '.join(Allrounder)
 # options =st.sidebar.selectbox('Batter','Wicketkeeper','Allrounder','Bowler')
 # st.write(options)
+#st.write(kipper)
+#st.text(kipper)
 
 df1 = pd.read_csv('Squads.csv')
 
 if st.sidebar.button('Squad'):
   st.write(df1)
 
+option = st.sidebar.selectbox('Email','Wicketkeeper','Allrounder','Bowler')
+st.write('you selected:',option)
+# option = st.sidebar.selectbox(
+#     'How would you like to be contacted?',
+#     ('Email', 'Home phone', 'Mobile phone'))
+
+# st.write('You selected:', option)
 
 
-option = st.sidebar.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
-
-st.write('You selected:', option)
 
 
-
-#st.write(kipper)
-#st.text(kipper)
