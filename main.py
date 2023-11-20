@@ -14,8 +14,8 @@ kipper=', '.join(WicketKeeper)
 
 Allrounder=['Arshad']
 All=', '.join(Allrounder)
-options =st.sidebar.selectbox('Batter','Wicketkeeper','Allrounder','Bowler')
-st.write(options)
+options =st.sidebar.selectbox('Batter','Wicketkeeper','Allrounder','Bowler'):
+  st.write(options)
 
 df1 = pd.read_csv('Squads.csv')
 
