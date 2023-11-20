@@ -6,14 +6,9 @@ import streamlit as st
 
 
 df = pd.read_csv('cricket.csv')
-st.title("ICC ODI MEN'S CRICKET WORLD CUP 2023")
-st.subheader('Points Table World Cup 2023')
-# df 
+df
 
-if st.sidebar.button('Click'):
-  st.write(df)
-
-df1 = pd.read_csv('Squads.csv')
+df1 = pd.read_csv('Squad.csv')
 
 if st.sidebar.button('Squad'):
   st.write(df1)
