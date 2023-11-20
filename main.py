@@ -7,7 +7,7 @@ import streamlit as st
 
 df = pd.read_csv('cricket.csv')
 st.title("ICC ODI MEN'S CRICKET WORLD CUP 2023")
-st.subtitle('Points Table World Cup 2023')
+st.title('Points Table World Cup 2023')
 df 
 
 # if st.sidebar.button('Click'):
