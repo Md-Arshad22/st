@@ -23,7 +23,7 @@ if st.sidebar.button('Squad'):
   st.write(df1)
 
 
-options = st.sidebar.multiselect(
+options = st.sidebar.selectbox(
     'What are your favorite colors',
     ['Green', 'Yellow', 'Red', 'Blue'],
     ['Yellow', 'Red'])
