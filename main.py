@@ -24,9 +24,9 @@ df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Squad'):
   st.write(df1)
 
-# option = st.sidebar.selectbox('Email','Wicketkeeper','Allrounder','Bowler')
-# st.write('you selected:',option)
-option = st.sidebar.selectbox(
+import streamlit as st
+
+option = st.side.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
