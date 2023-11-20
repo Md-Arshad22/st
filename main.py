@@ -16,8 +16,8 @@ if st.sidebar.button('Click Squad'):
     st.write(df1)
     
 df2 = pd.read_csv('Bowler.csv')
-if st.sidebar.button('Click Bowler'):
-    st.write(df2)
+# if st.sidebar.button('Click Bowler'):
+#     st.write(df2)
 
 option = st.sidebar.selectbox(
     'Select!',
