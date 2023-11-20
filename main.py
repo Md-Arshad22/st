@@ -11,7 +11,7 @@ df = pd.read_csv('cricket.csv')
 # df 
 
 if st.sidebar.button('Click'):
-  st.write(df.describe())
+  st.write(df)
 
 df1 = pd.read_csv('Squads.csv')
 
