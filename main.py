@@ -10,7 +10,7 @@ df
 #   st.write(df.describe())
 
 df1 = pd.read_csv('Squads.csv')
-
+st.pyplot(df1)
 if st.sidebar.button('Squad'):
   st.write(df1)
 
@@ -19,9 +19,9 @@ if st.sidebar.button('Squad'):
 # ax.hist(arr, bins=20)
 # st.pyplot(fig)
 
-a1 = pd.DataFrame(df['year'],df['Total Price'])
-st.line_chart(a1)
-st.pyplot(fig)
+# a1 = pd.DataFrame(df['year'],df['Total Price'])
+# st.line_chart(a1)
+# st.pyplot(fig)
 
 option = st.sidebar.selectbox(
     'Select!',
