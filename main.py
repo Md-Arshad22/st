@@ -14,8 +14,10 @@ df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Squad'):
   st.write(df1)
 
-chart_data = pd.DataFrame(np.random.randn('Squade.csv'), columns=['a','b'])
-st.bar_chart(chart_data)
+arr = np.random.normal(1, 1,size=100)
+fig, ax = plt.subplots()
+ax.hist(arr, bins=20)
+st.pyplot(fig)
 
 option = st.sidebar.selectbox(
     'Select!',
