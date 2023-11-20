@@ -16,6 +16,10 @@ if st.sidebar.button('Click'):
 # options =st.sidebar.selectbox('choose option',({kippers=['kl','kishan']}))
 # st.write(options)
 
+df1 = pd.read_csv('Squads.csv')
+
+if st.sidebar.button('Squad'):
+  st.write(df1)
 
 
 
