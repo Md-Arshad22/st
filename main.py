@@ -15,8 +15,7 @@ if st.sidebar.button('Squad'):
   st.write(df1)
 
 option = st.sidebar.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+    ('Batter', 'WicketKeeper', 'All-Rounder','Bowler'))
 
 st.write('You selected:', option)
 
