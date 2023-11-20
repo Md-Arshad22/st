@@ -24,7 +24,6 @@ if st.sidebar.button('Squad'):
 
 
 options = st.sidebar.multiselect(
-    'What are your favorite colors',
     ['Green', 'Yellow', 'Red', 'Blue'],
     ['Yellow', 'Red'])
 
