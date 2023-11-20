@@ -24,14 +24,12 @@ df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Squad'):
   st.write(df1)
 
-import streamlit as st
 
-option = st.side.selectbox(
+option = st.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
 st.write('You selected:', option)
-
 
 
 
