@@ -14,7 +14,7 @@ df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Squad'):
   st.write(df1)
 
-chart_data = pd.DataFrame(np.random.randn(20,3), columns=['a','b','c'])
+chart_data = pd.DataFrame(np.random.randn('Squade.csv'), columns=['a','b'])
 st.bar_chart(chart_data)
 
 option = st.sidebar.selectbox(
