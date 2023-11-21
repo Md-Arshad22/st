@@ -32,6 +32,10 @@ genre = st.radio(
     index=None,
 )
 st.write("You selected:", genre)
+if st.sidebar.button('radio'):
+    st.write(genre)
+
+
 
 option = st.selectbox(
     'How would you like to be contacted?',
