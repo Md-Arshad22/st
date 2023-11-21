@@ -4,9 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
+
+df = pd.read_csv('cricket.csv')
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINT TABLE WORLD CUP2023')
-df = pd.read_csv('cricket.csv')
+df
 
 df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Click Squad'):
