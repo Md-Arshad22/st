@@ -33,8 +33,11 @@ genre = st.radio(
 
 if genre == ':Australia':
     st.write('You selected Australia.')
+
+if genre == ':South Africa":
+    st.write('You Selected South Africa')
 else:
-    st.write("You didn\'t select Australia.")
+    st.write("You didn\'t select Any Champion Team.")
 
 
 agree = st.checkbox('I agree')
