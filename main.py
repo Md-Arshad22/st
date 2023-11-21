@@ -19,22 +19,22 @@ df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
     st.write(df2)
 
-option = st.sidebar.selectbox(
-    'Select!',
-    ('Batter','WicketKeeper', 'All-Rounder','Bowler')
-)
-st.write('Selected:', option)
+# option = st.sidebar.selectbox(
+#     'Select!',
+#     ('Batter','WicketKeeper', 'All-Rounder','Bowler')
+# )
+# st.write('Selected:', option)
 
 
 genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
-    captions = ["Laugh out loud.", "Get the popcorn.", "Never stop learning."])
+    "Your Champions Are Here!",
+    [":Australia", "***South Africa***":],
+    captions = ["Sixth Time Champion", "Zero Time", "Never stop Fighting."])
 
-if genre == ':rainbow[Comedy]':
-    st.write('You selected comedy.')
+if genre == ':Australia':
+    st.write('You selected Australia.')
 else:
-    st.write("You didn\'t select comedy.")
+    st.write("You didn\'t select Australia.")
 
 
 agree = st.checkbox('I agree')
