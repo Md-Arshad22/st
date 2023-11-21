@@ -12,7 +12,7 @@ df
 
 x = [50,60,70,80,90]
 plt.boxplot(x)
-
+plt.show()
 
 # df1 = pd.read_csv('Squads.csv')
 # if st.sidebar.button('Click Squad'):
