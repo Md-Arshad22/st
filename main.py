@@ -25,7 +25,10 @@ option = st.sidebar.selectbox(
 )
 st.write('Selected:', option)
 
+agree = st.checkbox('I agree')
 
+if agree:
+    st.write('Great!')
 
 
 
