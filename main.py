@@ -12,6 +12,7 @@ df
 
 df1 = pd.read_csv('Squads.csv')
 
+
 if st.sidebar.button('Click Squad'):
     st.write(df1)
     
@@ -36,15 +37,13 @@ st.write("You selected:", genre)
 #     st.write(genre)
 
 
-
-option = st.sidebar.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+# option = st.sidebar.selectbox(
+#     'How would you like to be contacted?',
+#     ('Email', 'Home phone', 'Mobile phone'))
 
 st.write('You selected:', option)
 # if st.sidebar.button('Press'):
 #     st.write(option)
-
 
 on = st.toggle('Activate feature')
 if on:
