@@ -10,6 +10,9 @@ st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINTS TABLE WORLD CUP 2023')
 df
 
+df1 = pd.read_csv('Squads.csv')
+if st.sidebar.button('Click Squad'):
+    st.write(df1)
 # df1 = pd.read_csv('Squads.csv')
 # if st.sidebar.button('Click Squad'):
 #     st.write(df1)
