@@ -10,6 +10,8 @@ st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINTS TABLE WORLD CUP 2023')
 df
 
+x = [50,60,70,80,90]
+plt.boxplt(x)
 
 
 # df1 = pd.read_csv('Squads.csv')
