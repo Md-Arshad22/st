@@ -4,20 +4,6 @@ import matplotlib.pyplot as plt
 # import seaborn as sns
 import streamlit as st
 
-def set_background():
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("CUP.jpg");
-    background-size: cover;
-    }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-# Set the background image
-set_background()
-
 
 df = pd.read_csv('cricket.csv')
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
