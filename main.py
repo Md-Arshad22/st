@@ -16,7 +16,7 @@ if st.sidebar.button('Click Squad'):
 
 df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
-    st.write(df1)
+    st.write(df2)
     
 # df2 = pd.read_csv('Bowler.csv')
 # if st.sidebar.button('Click Bowler'):
