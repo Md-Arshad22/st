@@ -28,7 +28,7 @@ if st.sidebar.button('Click Bowler'):
 
 genre = st.radio(
     "Your Favorite Team!",
-    [":rainbow[India]", "***Australia***", "Final Match : Ind vs Aus:"],
+    [":rainbow[India] : Rohit Virat Shami", "***Australia***", "Final Match : Ind vs Aus:"],
     index=None,
 )
 st.write("You selected:", genre)
