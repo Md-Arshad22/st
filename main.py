@@ -33,7 +33,13 @@ genre = st.radio(
 )
 st.write("You selected:", genre)
 
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
 
+st.write('You selected:', option)
+if st.sidebar.button('Press'):
+    st.write(option)
 
 agree = st.checkbox('I agree')
 # if agree:
