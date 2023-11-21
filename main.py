@@ -29,7 +29,7 @@ if st.sidebar.button('Click Bowler'):
 genre = st.radio(
     "Your Champions Are Here!",
     [":Australia", "***South Africa***","India:"],
-    captions = ["Sixth Time Champion", "Zero Time", "Never stop Fighting."])
+    captions = ["Sixth Time Champion", "Zero Time", "Two Time Champions."])
 
 if genre == ':Australia':
     st.write('You selected Australia.')
