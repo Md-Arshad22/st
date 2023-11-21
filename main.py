@@ -26,18 +26,7 @@ if st.sidebar.button('Click Bowler'):
 # st.write('Selected:', option)
 
 
-genre = st.radio(
-    "Your Champions Are Here!",
-    [":Australia", "***South Africa***","India:"],
-    captions = ["Sixth Time Champion", "Zero Time", "Two Time Champions."])
 
-if genre == ':Australia':
-    st.write('You selected Australia.')
-
-if genre == ':South Africa':
-    st.write('You Selected South Africa')
-else:
-    st.write("You didn\'t select Any Champion Team.")
 
 
 agree = st.checkbox('I agree')
