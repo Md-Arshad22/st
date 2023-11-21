@@ -17,10 +17,7 @@ if st.sidebar.button('Click Squad'):
 df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
     st.write(df2)
-    
-# df2 = pd.read_csv('Bowler.csv')
-# if st.sidebar.button('Click Bowler'):
-#     st.write(df2)
+
 
 # ball_df, match_df, summary, city_df = dataset.get_data()
 # user_menu = st.sidebar.radio(
@@ -29,7 +26,10 @@ if st.sidebar.button('Click Bowler'):
 # )
 
 
-
+ball_df, match_df, summary, city_df = dataset.get_data()
+user_menu = st.sidebar.radio(
+    'Select Option',
+    ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
 
 
     
