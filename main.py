@@ -41,13 +41,7 @@ st.write('You selected:', option)
 if st.sidebar.button('Press'):
     st.write(option)
 
-agree = st.checkbox('I agree')
-# if agree:
-#     st.write('Great!')
-if st.sidebar.button('Click Agree'):
-    st.write(agree)
 
-
-# on = st.toggle('Activate feature')
-# if on:
-#     st.write('Feature activated!')
+on = st.toggle('Activate feature')
+if on:
+    st.write('Feature activated!')
