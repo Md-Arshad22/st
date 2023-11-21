@@ -29,6 +29,7 @@ agree = st.checkbox('I agree')
 
 if agree:
     st.write('Great!')
-
+if st.sidebar.button('Click Agree'):
+    st.write(agree)
 
 
