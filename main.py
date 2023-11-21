@@ -14,13 +14,13 @@ x = [50,60,70,80,90]
 plt.boxplot(x, notch=True)
 plt.show()
 
-# df1 = pd.read_csv('Squads.csv')
-# if st.sidebar.button('Click Squad'):
-#     st.write(df1)
+df1 = pd.read_csv('Squads.csv')
+if st.sidebar.button('Click Squad'):
+    st.write(df1)
     
-# df2 = pd.read_csv('Bowler.csv')
-# if st.sidebar.button('Click Bowler'):
-#     st.write(df2)
+df2 = pd.read_csv('Bowler.csv')
+if st.sidebar.button('Click Bowler'):
+    st.write(df2)
 
 # genre = st.sidebar.selectbox(
 #     "Your Favorite Team!",
