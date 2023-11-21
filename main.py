@@ -32,7 +32,7 @@ genre = st.radio(
     index=None,
 )
 st.write("You selected:", genre)
-if st.sidebar.button('radio'):
+if st.sidebar.selectbox('radio'):
     st.write(genre)
 
 
