@@ -7,31 +7,21 @@ import streamlit as st
 
 df = pd.read_csv('cricket.csv')
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
-st.subheader('POINT TABLE WORLD CUP2023')
+st.subheader('POINTS TABLE WORLD CUP 2023')\
 df
 
-df1 = pd.read_csv('Squads.csv')
-if st.sidebar.button('Click Squad'):
-    st.write(df1)
+# df1 = pd.read_csv('Squads.csv')
+# if st.sidebar.button('Click Squad'):
+#     st.write(df1)
     
-df2 = pd.read_csv('Bowler.csv')
-if st.sidebar.button('Click Bowler'):
-    st.write(df2)
+# df2 = pd.read_csv('Bowler.csv')
+# if st.sidebar.button('Click Bowler'):
+#     st.write(df2)
 
-genre = st.sidebar.selectbox(
-    "Your Favorite Team!",
-    [":rainbow[India] : Rohit Virat Shami", "***Australia***", "Final Match : Ind vs Aus:"],
-    index=None,
-)
-st.write("You selected:", genre)
-# if st.sidebar.selectbox('radio'):
-#     st.write(genre)
+# genre = st.sidebar.selectbox(
+#     "Your Favorite Team!",
+#     [":rainbow[India] : Rohit Virat Shami", "***Australia***", "Final Match : Ind vs Aus:"],
+#     index=None,
+# )
+# st.write("You selected:", genre)
 
-
-# option = st.sidebar.selectbox(
-#     'How would you like to be contacted?',
-#     ('Email', 'Home phone', 'Mobile phone'))
-
-# st.write('You selected:', option)
-# if st.sidebar.button('Press'):
-#     st.write(option)
