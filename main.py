@@ -10,23 +10,19 @@ st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINTS TABLE WORLD CUP 2023')
 df
 
-x = [50,60,70,80,90]
-plt.boxplot(x, notch=True)
-plt.show()
-
-df1 = pd.read_csv('Squads.csv')
-if st.sidebar.button('Click Squad'):
-    st.write(df1)
+# df1 = pd.read_csv('Squads.csv')
+# if st.sidebar.button('Click Squad'):
+#     st.write(df1)
     
-df2 = pd.read_csv('Bowler.csv')
-if st.sidebar.button('Click Bowler'):
-    st.write(df2)
+# df2 = pd.read_csv('Bowler.csv')
+# if st.sidebar.button('Click Bowler'):
+#     st.write(df2)
 
-ball_df, match_df, summary, city_df = dataset.get_data()
-user_menu = st.sidebar.radio(
-    'Select Option',
-    ('Overview', 'Overall Analysis','Teamwise Analysis' , 'Yearwise Analysis')
-)
+# ball_df, match_df, summary, city_df = dataset.get_data()
+# user_menu = st.sidebar.radio(
+#     'Select Option',
+#     ('Overview', 'Overall Analysis','Teamwise Analysis' , 'Yearwise Analysis')
+# )
 
 
 
