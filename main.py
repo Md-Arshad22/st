@@ -27,8 +27,8 @@ if st.sidebar.button('Click Bowler'):
 
 
 genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    "Your Favorite Team!",
+    [":rainbow[India]", "***Australia***", "Final Match :Ind vs Aus:"],
     index=None,
 )
 st.write("You selected:", genre)
