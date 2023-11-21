@@ -7,7 +7,7 @@ import streamlit as st
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINT TABLE WORLD CUP2023')
 df = pd.read_csv('cricket.csv')
-plt.bar(df1['TEAM'],df1['M'],df1['W'],df1['L'],df1['NRR'],df1['Plt'],df1['Last 5'])
+plt.bar(df['TEAM'],df['M'],df['W'],df['L'],df['NRR'],df['Plt'],df['Last 5'])
 plt.show()
 
 df1 = pd.read_csv('Squads.csv')
