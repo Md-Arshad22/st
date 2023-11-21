@@ -25,25 +25,25 @@ if st.sidebar.button('Click Bowler'):
 # )
 # st.write('Selected:', option)
 
-
-genre = st.radio(
+Australia = ('Smith')
+genre = st.sidebar.selectbox(
     "Your Favorite Team!",
     [":rainbow[India] : Rohit Virat Shami", "***Australia***", "Final Match : Ind vs Aus:"],
     index=None,
 )
 st.write("You selected:", genre)
-if st.sidebar.selectbox('radio'):
-    st.write(genre)
+# if st.sidebar.selectbox('radio'):
+#     st.write(genre)
 
 
 
-option = st.selectbox(
+option = st.sidebar.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
 st.write('You selected:', option)
-if st.sidebar.button('Press'):
-    st.write(option)
+# if st.sidebar.button('Press'):
+#     st.write(option)
 
 
 on = st.toggle('Activate feature')
