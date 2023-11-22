@@ -13,6 +13,8 @@ df
 df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Click Squad'):
     st.write(df1)
+if st.sidebar.button('load description'):
+    st.write(df1.describe())
 
 df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
@@ -31,10 +33,6 @@ if st.sidebar.button('Batter'):
 # plt.bar(x,y)
 # plt.show()
 
-x = [10,50,130,200]
-y = [5200, 5400, 5500, 4000]
-plt.bar(x,y)
-plt.show()
 
 
 
