@@ -19,12 +19,16 @@ if st.sidebar.button('Click Bowler'):
     st.write(df2)
 
 
-cricket, Squads, = stream.get_data()
+# cricket, Squads, = stream.get_data()
+# user_menu = st.sidebar.radio(
+#     'Select Option',
+#     ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
+# )
+cricket, Squads = stream.get_data()
 user_menu = st.sidebar.radio(
     'Select Option',
-    ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
+    ('Overview', 'Overall Analysis', 'Teamwise')
 )
-
 
 # matches_per_year_df = helper.data_per_year(ball_df, match_df, 'Match No')
 
