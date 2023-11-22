@@ -33,7 +33,10 @@ if st.sidebar.button('Batter'):
 # y = np.array([17,10,15,50,15,28,30,45])
 # plt.bar(x,y)
 # plt.show()
-
+x = [20,30,50]
+y = [100,200,500]
+plt.bar(x,y)
+plt.show()
 
 
 
