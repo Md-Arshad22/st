@@ -8,13 +8,14 @@ import streamlit as st
 df = pd.read_csv('cricket.csv')
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINTS TABLE WORLD CUP 2023')
-df
 
+if st.sidebar.button('load description'):
+    st.write(df.describe())
+    
 df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Click Squad'):
     st.write(df1)
-if st.sidebar.button('load description'):
-    st.write(df1.describe())
+
 
 df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
