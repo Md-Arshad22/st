@@ -19,26 +19,12 @@ if st.sidebar.button('Click Bowler'):
     st.write(df2)
 
 
-# ball_df, match_df, summary, city_df = dataset.get_data()
-# user_menu = st.sidebar.radio(
-#     'Select Option',
-#     ('Overview', 'Overall Analysis','Teamwise Analysis' , 'Yearwise Analysis')
-# )
-
-
 cricket, Squads, = streamlit.get_data()
 user_menu = st.sidebar.radio(
     'Select Option',
     ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
 )
 
-    
-# genre = st.sidebar.selectbox(
-#     "Your Favorite Team!",
-#     [":rainbow[India] : Rohit Virat Shami", "***Australia***", "Final Match : Ind vs Aus:"],
-#     index=None,
-# )
-# st.write("You selected:", genre)
 
 # matches_per_year_df = helper.data_per_year(ball_df, match_df, 'Match No')
 
