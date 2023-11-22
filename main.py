@@ -26,7 +26,7 @@ if st.sidebar.button('Click Bowler'):
 # )
 
 
-ball_df, match_df, summary, city_df = dataset.get_data()
+cricket, Squads, = streamlit.get_data()
 user_menu = st.sidebar.radio(
     'Select Option',
     ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
