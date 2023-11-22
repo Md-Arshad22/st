@@ -17,18 +17,25 @@ if st.sidebar.button('Click Squad'):
 df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
     st.write(df2)
+    
+df3 = pd.read_csv('All.csv')
+if st.sidebar.button('All'):
+    st.write(df3)
 
+df4 = pd.read_csv('batter.csv')
+if st.sidebar.button('Batter'):
+    st.write(df4)
 
 # cricket, Squads, = stream.get_data()
 # user_menu = st.sidebar.radio(
 #     'Select Option',
 #     ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
 # )
-cricket, Squads = stream.get_data()
-user_menu = st.sidebar.radio(
-    'Select Option',
-    ('Overview', 'Overall Analysis', 'Teamwise')
-)
+# cricket, Squads = stream.get_data()
+# user_menu = st.sidebar.radio(
+#     'Select Option',
+#     ('Overview', 'Overall Analysis', 'Teamwise')
+# )
 
 # matches_per_year_df = helper.data_per_year(ball_df, match_df, 'Match No')
 
