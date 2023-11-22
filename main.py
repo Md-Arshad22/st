@@ -19,7 +19,7 @@ if st.sidebar.button('Click Bowler'):
     st.write(df2)
 
 
-cricket, Squads, = streamlit.get_data()
+cricket, Squads, = stream.get_data()
 user_menu = st.sidebar.radio(
     'Select Option',
     ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
