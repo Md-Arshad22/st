@@ -14,6 +14,16 @@ df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Click Squad'):
     st.write(df1)
 
+labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
+sizes = [15,30,45,10]
+explode = (0, 0.1, 0, 0)
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode= explode, labels = labels, autopct='%1.1f%',
+        shadow= True, startangle=90)
+ax1.axis('eqaul')
+st.pyplot(fig1)
+
+
 df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Click Bowler'):
     st.write(df2)
@@ -26,18 +36,6 @@ df4 = pd.read_csv('batter.csv')
 if st.sidebar.button('Batter'):
     st.write(df4)
 
-# cricket, Squads, = stream.get_data()
-# user_menu = st.sidebar.radio(
-#     'Select Option',
-#     ('Overview', 'Overall Analysis', 'Teamwise Analysis', 'Yearwise Analysis')
-# )
-# cricket, Squads = stream.get_data()
-# user_menu = st.sidebar.radio(
-#     'Select Option',
-#     ('Overview', 'Overall Analysis', 'Teamwise')
-# )
 
-# matches_per_year_df = helper.data_per_year(ball_df, match_df, 'Match No')
 
-#     st.title('Total Matches per Year')
-#     fig = px.line(matches_per_year_df, x = 'Year', y= 'Value', height=600, width=900, label
+
