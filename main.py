@@ -26,7 +26,7 @@ df4 = pd.read_csv('batter.csv')
 if st.sidebar.button('Batter'):
     st.write(df4)
 
-x = np.array(['SNO','TEAM','M','W','L','NRR','Plt','Last 5'])
+x = np.array(['SNO','TEAM','M','W','L','NRR','Pts','Last 5'])
 y = np.array([17,10,15,50,15,28,30,45])
 plt.bar(x,y)
 plt.show()
