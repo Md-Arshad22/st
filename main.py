@@ -20,7 +20,7 @@ if st.sidebar.button('Squad'):
 df2 = pd.read_csv('Bowler.csv')
 
 if st.sidebar.button('Bowler'):
-  st.write('df2')
+  st.write(df2)
 
 
 
