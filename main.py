@@ -9,7 +9,8 @@ st.subheader('POINT TABLE WORLD CUP 2023')
 
 df = pd.read_csv('cricket.csv')
 df
-
+if st.sidebar.button('load description'):
+  st.write(df.describe())
 
 
 
