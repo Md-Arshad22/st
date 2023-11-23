@@ -22,5 +22,10 @@ df2 = pd.read_csv('Bowler.csv')
 if st.sidebar.button('Bowler'):
   st.write(df2)
 
+df3 = pd.read_csv('keeper.csv')
+if st.sidebar.button('keeper'):
+  st.write(df3)
 
-
+df4 = pd.read_csv('batter.csv')
+if st.sidebar.button('Batter'):
+  st.write(df4)
