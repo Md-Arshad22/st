@@ -5,14 +5,14 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
-df = pd.read_csv('cricket.csv')
-df
 
 st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINTS TABLE WORLD CUP 2023')
+df = pd.read_csv('cricket.csv')
+df
 
-if st.sidebar.button('load description'):
-    st.write(df.describe())
+# if st.sidebar.button('load description'):
+#     st.write(df.describe())
     
 df1 = pd.read_csv('Squads.csv')
 if st.sidebar.button('Click Squad'):
