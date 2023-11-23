@@ -14,7 +14,8 @@ if st.sidebar.button('load description'):
   st.write(df.describe())
 
 df1 = pd.read_csv('Squads.csv')
-df1
+if st.sidebar.button('Squad'):
+  st.write(df1)
 
 
 
