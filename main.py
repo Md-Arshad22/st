@@ -8,7 +8,8 @@ st.title('ICC ODI MENS CRICKET WORLD CUP 2023')
 st.subheader('POINT TABLE WORLD CUP 2023')
 
 df = pd.read_csv('cricket.csv')
-df
+if st.sidebar.button('Cric'):
+  st.write(df)
 
 if st.sidebar.button('load description'):
   st.write(df.describe())
